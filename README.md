@@ -1,8 +1,63 @@
-# React + Vite
+📁 React Folder Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application to simulate a file/folder explorer with nested folder structure. Users can dynamically add folders and files into any folder level.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🚀 Features
+
+- Expand/Collapse folder structure
+  
+- Add new folders and files dynamically
+  
+- Visual distinction between folders 📂 and files 📄
+  
+- Recursive rendering of nested items
+
+---
+
+📦 Folder Structure
+
+├── public/
+
+├── src/
+
+│ ├── components/
+
+│ │ └── Folder.jsx # Recursive folder component
+
+│ ├── data/
+
+│ │ └── folderData.js # Initial data structure
+
+│ ├── hook/
+
+│ │ └── use-traverse-file.js # Logic to insert files/folders
+
+│ ├── App.css
+
+│ ├── App.jsx
+
+│ └── index.js
+
+---
+
+🧠 How It Works
+
+🔹 The folder structure is stored in a nested object (explorer).
+
+🔹 Folder component recursively renders its child folders/files.
+
+🔹 use-traverse-file custom hook handles adding new files/folders by modifying the tree structure.
+
+---
+
+✨ Future Improvements
+
+😎 Add delete and rename functionality
+
+😎 Save data using localStorage or a backend
+
+😎 Drag and drop to move items
+
+😎 Search functionality
