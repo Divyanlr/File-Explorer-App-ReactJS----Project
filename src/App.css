@@ -1,0 +1,62 @@
+.folder {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 6px 10px;
+  margin: 4px 0;
+  background-color: #f5f5f5;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.2s ease;
+  max-width: 400px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.folder:hover {
+  background-color: #e0e0e0;
+}
+
+.folder button {
+  margin-left: 6px;
+  font-size: 14px;
+  padding: 4px 6px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.folder button:hover {
+  background-color: #302c2c;
+  color: white;
+}
+
+.inputText {
+  margin: 6px 0 6px 25px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.inputText input {
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.inputText input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 2px #007bff;
+}
+
+.file {
+  padding: 6px 10px;
+  margin: 4px 0 4px 25px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  color: #333;
+}
